@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Auth session event consumer for Django — bridges streambus events with token invalidation"
 readme = "README.md"
 requires-python = ">=3.12"
-license = { text = "MIT" }
+license = { file = "LICENSE" }
 authors = [{ name = "Jose Meira", email = "jmeiracorbal@gmail.com" }]
 keywords = ["django", "jwt", "authentication", "events", "streambus"]
 classifiers = [
