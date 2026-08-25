@@ -59,7 +59,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "django-auth-external", editable = "../django-auth-external" },
+    { name = "django-auth-external", specifier = ">=0.1.0" },
     { name = "fakeredis", specifier = ">=2.26" },
     { name = "pytest", specifier = ">=8.0" },
     { name = "pytest-django", specifier = ">=4.9" },
@@ -68,24 +68,14 @@ dev = [
 [[package]]
 name = "django-auth-external"
 version = "0.1.0"
-source = { editable = "../django-auth-external" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "django" },
     { name = "pyjwt" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "django", specifier = ">=4.2" },
-    { name = "djangorestframework", marker = "extra == 'drf'", specifier = ">=3.14" },
-    { name = "pyjwt", specifier = ">=2.8" },
-]
-provides-extras = ["drf"]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "pytest", specifier = ">=8.0" },
-    { name = "pytest-django", specifier = ">=4.9" },
+sdist = { url = "https://files.pythonhosted.org/packages/27/88/0cc41c3dfbaecafc8f9b6b3809283c4570d115de2718ba4f961ed7046089/django_auth_external-0.1.0.tar.gz", hash = "sha256:dd3f30679b62b91a35ddbf136c932d2e8eb60ff378596fb67244e80c4b3dc867", size = 9636, upload-time = "2026-08-24T16:53:01.231Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b4/f8/a2da22d9254eef79ea1d19256968307efe38546b7b59b3a04e8e11b138c0/django_auth_external-0.1.0-py3-none-any.whl", hash = "sha256:05b647ec023e98a38705d712263442d64ecd22f8f5e20eadef65d5f00abce6c5", size = 7020, upload-time = "2026-08-24T16:53:00.173Z" },
 ]
 
 [[package]]

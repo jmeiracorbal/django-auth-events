@@ -30,5 +30,3 @@ dev = [
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
-[tool.uv.sources]
-django-auth-external = { path = "../django-auth-external", editable = true }
